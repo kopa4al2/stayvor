@@ -19,6 +19,10 @@ function ItemCard(props: ItemCardProps) {
         dispatch(deleteItem(id))
     }
 
+    function extractDate(publishedOn: Date) {
+        return new Date(publishedOn).toLocaleDateString() + ' ' + new Date(publishedOn).toLocaleTimeString();
+    }
+
     return (
         <div className='item-card'>
             <div>
@@ -28,6 +32,10 @@ function ItemCard(props: ItemCardProps) {
             <div>
                 <span className='label label-name'>Publisher:</span>
                 <span className='label label-value'>{props.publisher}</span>
+            </div>
+            <div>
+                <span className='label label-name'>Date:</span>
+                <span className='label label-value'>{extractDate(props.publishedOn)}</span>
             </div>
             <span onClick={() => removeItem(props.id)}>Remove</span>
         </div>

@@ -17,6 +17,10 @@ export default abstract class BaseApi {
 
     performPost(url: string, body: any) {
         return axios.post(BaseApi.BASE_URL + url, body, { withCredentials: false })
+            .then(response => {
+                console.log(`Successfull POST response to url ${url}. Response: `, response.data);
+                return response.data;
+            })
             .catch(err => {
                 console.log(`error while post data to url: ${url}`, err)
             });
@@ -32,4 +36,5 @@ export default abstract class BaseApi {
                 console.log(`error while fetching data from url: ${url}`, err)
             });
     }
+
 }

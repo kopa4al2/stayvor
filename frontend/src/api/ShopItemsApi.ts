@@ -10,6 +10,10 @@ class ShopItemsApi extends BaseApi {
     removeItem(id:number) :Promise<string> {
         return this.performDelete(`/api/v1/items/remove/${id}`);
     }
+    addItem(item:Partial<ShopItem>) :Promise<ShopItem> {
+        // @ts-ignore
+        return this.performPost(`/api/v1/items/add`, item);
+    }
 }
 
 export default new ShopItemsApi();

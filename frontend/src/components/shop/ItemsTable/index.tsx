@@ -5,6 +5,9 @@ import './styles.css';
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../store/reduxStore";
 import { fetchAllItems } from "../../../store/features/shopSlice";
+import AddItem from "../AddItem";
+import { openModal } from "../../../store/features/modalSlice";
+import Filter from "../FIlter";
 
 function ItemsTable(props) {
     const dispatch = useDispatch();
@@ -15,15 +18,26 @@ function ItemsTable(props) {
         dispatch(fetchAllItems());
     }, []);
 
+    const toggleModal = () => {
+        dispatch(openModal({
+            children: <AddItem/>,
+            title: 'Add Item'
+        }))
+    }
+
     return (
-        <div className='items'>
-            {shopItems && shopItems.map(item => <ItemCard
-                key={item.id}
-                id={item.id}
-                price={item.price}
-                publishedOn={item.publishedOn}
-                publisher={item.publisher}
-            />)}
+        <div className="table-wrapper">
+            <button className="new-item" onClick={toggleModal}>New item</button>
+            <Filter/>
+            <div className='items'>
+                {shopItems && shopItems.map(item => <ItemCard
+                    key={item.id}
+                    id={item.id}
+                    price={item.price}
+                    publishedOn={item.publishedOn}
+                    publisher={item.publisher}
+                />)}
+            </div>
         </div>
     );
 }

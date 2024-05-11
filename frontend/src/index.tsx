@@ -8,6 +8,9 @@ import { Provider } from 'react-redux'
 import { reduxStore } from './store/reduxStore';
 import { Router, RouterProvider } from "react-router-dom";
 import { router } from "./configs/routerConfig";
+import Modal from "./components/modal";
+
+import 'bootstrap/dist/css/bootstrap.css';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -17,6 +20,7 @@ root.render(
     <React.StrictMode>
         <Provider store={reduxStore}>
             <RouterProvider router={router}/>
+            <Modal/>
         </Provider>
     </React.StrictMode>
 );
