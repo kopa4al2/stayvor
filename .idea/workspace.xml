@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="908db5ed-31a9-4aac-b08f-e2f53099f4f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Styavor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/config/MockData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/config/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/controller/ItemsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/models/ShopItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/models/ShopItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/repository/ShopRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/BaseApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/ShopItemsApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Header/header-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shop/ItemCard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shop/ItemCard/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shop/ItemsTable/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shop/ItemsTable/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/configs/routerConfig.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ContactPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ShopPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/features/shopSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/reduxStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/shop/ShopItem/ShopItem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2gJQbwFZ2CAx4zCuGnPZMlFPMrO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Stefan/IdeaProjects/Styavor/backend",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "ts.external.directory.path": "C:\\Users\\Stefan\\IdeaProjects\\Styavor\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefan\IdeaProjects\Styavor\frontend\src\pages" />
+      <recent name="C:\Users\Stefan\IdeaProjects\Styavor\frontend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefan\IdeaProjects\Styavor\frontend\src\store" />
+      <recent name="C:\Users\Stefan\IdeaProjects\Styavor\frontend\src\components\shop" />
+      <recent name="C:\Users\Stefan\IdeaProjects\Styavor\frontend\src\components\hoc" />
+      <recent name="C:\Users\Stefan\IdeaProjects\Styavor\frontend\src\components" />
+      <recent name="C:\Users\Stefan\IdeaProjects\Styavor\frontend\src\configs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="908db5ed-31a9-4aac-b08f-e2f53099f4f4" name="Changes" comment="" />
+      <created>1715413278213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715413278213</updated>
+      <workItem from="1715413279268" duration="10670000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
