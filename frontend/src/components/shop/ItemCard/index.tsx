@@ -1,7 +1,6 @@
-import React from 'react';
-import './styles.css';
 import { useDispatch } from "react-redux";
-import { deleteItem } from "../../../store/features/shopSlice";
+import { deleteItem } from "../../../store/thunk/thunk";
+import './styles.css';
 
 
 interface ItemCardProps {
@@ -27,7 +26,7 @@ function ItemCard(props: ItemCardProps) {
         <div className='item-card'>
             <div>
                 <span className='label label-name'>Price:</span>
-                <span className='label label-value'>{props.price}</span>
+                <span className='label label-value'>{props.price}$</span>
             </div>
             <div>
                 <span className='label label-name'>Publisher:</span>

@@ -1,17 +1,24 @@
 package com.styavor.shopche.controller;
 
-import com.styavor.shopche.config.MockData;
-import com.styavor.shopche.models.ShopItem;
-import com.styavor.shopche.models.ShopItemDto;
-import com.styavor.shopche.repository.ShopRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.styavor.shopche.config.MockData;
+import com.styavor.shopche.models.ShopItem;
+import com.styavor.shopche.models.ShopItemDto;
+import com.styavor.shopche.repository.ShopRepository;
+
+import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @RestController
@@ -52,4 +59,24 @@ public class ItemsController {
 
         return ResponseEntity.ok(shopItem);
     }
-}
+
+    // @PutMapping("api/v1/items/edit/{id}")
+    // public ResponseEntity<ShopItemDto> editItem(@PathVariable("id") long itemId, @RequestBody ShopItem updateItemDto) {
+    //     Optional<ShopItem> itemOptional = MockData.ITEMS.stream()
+    //             .filter(item -> item.id() == itemId)
+    //             .findFirst();
+
+    //             if (!itemOptional.isPresent()) {
+    //                 return ResponseEntity.notFound().build();
+    //             }
+        
+    //             ShopItem existingItem = itemOptional.get();
+    //             existingItem.setPrice(updateItemDto.getPrice());
+    //             existingItem.setPublisher(updatedItemDto.getPublisher());
+    //             // Update other fields as needed based on what's available in ShopItemDto
+        
+    //             return ResponseEntity.ok(existingItem);
+    //         }
+
+    }
+

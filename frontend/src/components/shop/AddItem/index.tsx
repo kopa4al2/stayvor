@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from "react-redux";
-import { addItem } from "../../../store/features/shopSlice";
+import { addItem } from "../../../store/thunk/thunk";
 
 interface ItemState {
     price?: number,

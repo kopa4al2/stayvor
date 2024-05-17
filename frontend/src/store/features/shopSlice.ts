@@ -1,7 +1,7 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { ShopItem } from "../../types/shop/ShopItem/ShopItem";
-import ShopItemsApi from "../../api/ShopItemsApi";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { FilterItems } from "../../types/shop/Filter/Filter";
+import { ShopItem } from "../../types/shop/ShopItem/ShopItem";
+import { addItem, deleteItem, fetchAllItems } from '../thunk/thunk';
 
 export interface ShopItemsState {
     shopItems: ShopItem[],
@@ -13,27 +13,6 @@ const initialState: ShopItemsState = {
     filters: [],
 }
 
-export const fetchAllItems = createAsyncThunk(
-    '/items/get-all',
-    async (thunkAPI) => {
-        return await ShopItemsApi.fetchAllItems()
-    },
-)
-
-export const deleteItem = createAsyncThunk(
-    '/items/remove',
-    async (id: number) => {
-        await ShopItemsApi.removeItem(id)
-        return id;
-    },
-)
-
-export const addItem = createAsyncThunk(
-    '/items/add',
-    async (item: Partial<ShopItem>) => {
-        return await ShopItemsApi.addItem(item);
-    },
-)
 
 function filterItems(itemsToFilter: ShopItem[], filters: FilterItems[]) {
     return itemsToFilter.filter(item => {

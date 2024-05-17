@@ -1,5 +1,27 @@
+:root {
+    --color-primary: #242424;
+    --color-border-gray: #f3f3f3;
+    --color-gray: #e0e0e0;
+    --color-white: #ffffff;
+    --color-burnt-orange: #f55520;
+    --color-orange: #ff6633;
+    --font-main: "Open-sans";
+  }
+  
+
 .items {
     display: flex;
     flex-wrap: wrap;
     /*justify-content: space-around;*/
+}
+
+.new-item {
+    border-radius: 4px;
+    background-color: var(--color-white);
+    transition: 0.2s;
+}
+
+.new-item:hover {
+    background-color: var(--color-orange);
+    transition: 0.2s;
 }

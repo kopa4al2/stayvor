@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import './styles.css';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { updateFilters } from "../../../store/features/shopSlice";
+import { fetchAllItems } from "../../../store/thunk/thunk";
 import {
     FilterItems,
     GreaterThanEqualsFilter,
     IncludesFilter,
     LessThanEqualsFilter
 } from "../../../types/shop/Filter/Filter";
-import { fetchAllItems, updateFilters } from "../../../store/features/shopSlice";
+import './styles.css';
+
 
 const defaultFilter: Record<string, FilterItems> = {};
 defaultFilter['startDate'] = new GreaterThanEqualsFilter('', 'publishedOn', 'startDate')

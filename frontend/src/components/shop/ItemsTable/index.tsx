@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
+import { useDispatch, useSelector } from "react-redux";
+import { openModal } from "../../../store/features/modalSlice";
+import { RootState } from "../../../store/reduxStore";
+import { fetchAllItems } from "../../../store/thunk/thunk";
+import AddItem from "../AddItem";
+import Filter from "../FIlter";
 import ItemCard from "../ItemCard";
 import './styles.css';
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../../store/reduxStore";
-import { fetchAllItems } from "../../../store/features/shopSlice";
-import AddItem from "../AddItem";
-import { openModal } from "../../../store/features/modalSlice";
-import Filter from "../FIlter";
 
-function ItemsTable(props) {
+function ItemsTable() {
     const dispatch = useDispatch();
     const { shopItems } = useSelector((state: RootState) => state.items);
 
