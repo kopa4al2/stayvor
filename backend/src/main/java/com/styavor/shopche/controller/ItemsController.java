@@ -60,23 +60,22 @@ public class ItemsController {
         return ResponseEntity.ok(shopItem);
     }
 
-    // @PutMapping("api/v1/items/edit/{id}")
-    // public ResponseEntity<ShopItemDto> editItem(@PathVariable("id") long itemId, @RequestBody ShopItem updateItemDto) {
-    //     Optional<ShopItem> itemOptional = MockData.ITEMS.stream()
-    //             .filter(item -> item.id() == itemId)
-    //             .findFirst();
+    @PutMapping("api/v1/items/edit/{id}")
+    public ResponseEntity<ShopItemDto> editItem(@PathVariable("id") long itemId, @RequestBody ShopItem updateItemDto) {
+        Optional<ShopItem> itemToEdit = MockData.ITEMS.stream()
+                .filter(item -> item.id() == itemId)
+                .findFirst();
 
-    //             if (!itemOptional.isPresent()) {
-    //                 return ResponseEntity.notFound().build();
-    //             }
+                if (!itemToEdit.isPresent()) {
+                    return ResponseEntity.notFound().build();
+                }
         
-    //             ShopItem existingItem = itemOptional.get();
-    //             existingItem.setPrice(updateItemDto.getPrice());
-    //             existingItem.setPublisher(updatedItemDto.getPublisher());
-    //             // Update other fields as needed based on what's available in ShopItemDto
-        
-    //             return ResponseEntity.ok(existingItem);
-    //         }
+                ShopItem existingItem = itemToEdit.get();
+                existingItem.setPrice(updateItemDto.getPrice());
+                existingItem.setPublisher(updatedItemDto.getPublisher());
+                
+                return ResponseEntity.ok(existingItem);
+            }
 
     }
 

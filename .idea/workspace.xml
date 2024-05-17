@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="908db5ed-31a9-4aac-b08f-e2f53099f4f4" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/modal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/modal/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/shop/AddItem/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/shop/FIlter/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/shop/FIlter/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/features/modalSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/types/shop/Filter/Filter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/BaseApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/BaseApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/ShopItemsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/ShopItemsApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/shop/ItemCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/shop/ItemCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/shop/ItemsTable/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/shop/ItemsTable/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/features/shopSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/features/shopSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/reduxStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/reduxStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/controller/ItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/styavor/shopche/controller/ItemsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +29,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2gJQbwFZ2CAx4zCuGnPZMlFPMrO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -60,7 +45,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Stefan/IdeaProjects/Styavor/backend",
+    "last_opened_file_path": "D:/Programming/stefan/shopche/stayvor",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -68,7 +53,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "inlay.hints",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "C:\\Users\\Stefan\\IdeaProjects\\Styavor\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -97,18 +85,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
