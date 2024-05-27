@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from "react-redux";
 import { addItem } from "../../../store/thunk/thunk";
+import { ShopItemProps } from '../../../types/shop/ShopItem/ShopItem';
 
 interface ItemState {
     price?: number,
@@ -10,14 +11,14 @@ interface ItemState {
 function AddItem() {
     const dispatch = useDispatch()
     const [itemState, setItemState] = useState<ItemState>({});
-    const updatePrice = (price) => {
+    const updatePrice = (price: ShopItemProps["price"]) => {
         setItemState({
             ...itemState,
             price
         })
     }
 
-    const updatePublisher = (publisher) => {
+    const updatePublisher = (publisher: ShopItemProps["publisher"]) => {
         setItemState({
             ...itemState,
             publisher
@@ -37,14 +38,15 @@ function AddItem() {
                 <input
                     id='priceInput'
                     value={itemState.price}
-                    onChange={ev => updatePrice(ev.target.value)}/>
+                    onChange={e => updatePrice(Number(e.target.value))}/>
             </div>
             <div className="form-group">
-                <label htmlFor="publisherInput" className="label">Publisher:</label> <input
-                value={itemState.publisher}
-                onChange={ev => updatePublisher(ev.target.value)}/>
+                <label htmlFor="publisherInput" className="label">Publisher:</label>
+                <input
+                    value={itemState.publisher}
+                    onChange={e => updatePublisher(e.target.value)}/>
             </div>
-            <button onClick={insertItem}> submit</button>
+            <button onClick={insertItem}>Submit</button>
         </div>
     );
 }

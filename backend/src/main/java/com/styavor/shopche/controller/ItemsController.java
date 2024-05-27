@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -61,7 +62,7 @@ public class ItemsController {
     }
 
     @PutMapping("api/v1/items/edit/{id}")
-    public ResponseEntity<ShopItemDto> editItem(@PathVariable("id") long itemId, @RequestBody ShopItem updateItemDto) {
+    public ResponseEntity<ShopItem> editItem(@PathVariable("id") long itemId, @RequestBody ShopItem updateItemDto) {
         Optional<ShopItem> itemToEdit = MockData.ITEMS.stream()
                 .filter(item -> item.id() == itemId)
                 .findFirst();
@@ -71,10 +72,17 @@ public class ItemsController {
                 }
         
                 ShopItem existingItem = itemToEdit.get();
-                existingItem.setPrice(updateItemDto.getPrice());
-                existingItem.setPublisher(updatedItemDto.getPublisher());
+                int index = MockData.ITEMS.indexOf(existingItem);
                 
-                return ResponseEntity.ok(existingItem);
+                ShopItem updatedItem = new ShopItem(
+                    existingItem.id(),
+                    updateItemDto.price(),
+                    updateItemDto.publisher(),
+                    existingItem.publishedOn()
+                );
+                MockData.ITEMS.set(index, updatedItem);
+
+                return ResponseEntity.ok(updatedItem);
             }
 
     }

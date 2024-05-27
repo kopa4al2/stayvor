@@ -1,6 +1,6 @@
 package com.styavor.shopche.models;
 
-import lombok.Data;
+// import lombok.Data;
 
 import java.time.LocalDateTime;
 
