@@ -6,6 +6,7 @@ import { EditItemProps } from "../../../types/shop/ShopItem/ShopItem";
 
 function EditItem({ item }: EditItemProps) {
   const dispatch: AppDispatch = useDispatch();
+  //
 
   const [price, setPrice] = useState(item.price);
   const [publisher, setPublisher] = useState(item.publisher);
