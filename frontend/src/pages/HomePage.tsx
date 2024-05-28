@@ -1,9 +1,5 @@
-import React from 'react';
-
-function HomePage(props) {
-    return (
-        <div></div>
-    );
+function HomePage() {
+  return <div className="Home">Hello world</div>;
 }
 
 export default HomePage;

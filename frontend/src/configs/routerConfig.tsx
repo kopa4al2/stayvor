@@ -1,19 +1,31 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import ShopPage from "../pages/ShopPage";
+import { Outlet, createBrowserRouter } from "react-router-dom";
+import HeaderLayout from "../components/layout/Header";
 import ContactPage from "../pages/ContactPage";
+import HomePage from "../pages/HomePage";
+import ShopPage from "../pages/ShopPage";
+
+const HeaderNavigation = () => (
+  <HeaderLayout>
+    <Outlet />
+  </HeaderLayout>
+);
 
 export const router = createBrowserRouter([
-    {
+  {
+    element: <HeaderNavigation />,
+    children: [
+      {
         path: "/",
-        element: <App />,
-    },
-    {
+        element: <HomePage />,
+      },
+      {
         path: "/shop",
         element: <ShopPage />,
-    },
-    {
+      },
+      {
         path: "/contacts",
         element: <ContactPage />,
-    },
+      },
+    ],
+  },
 ]);
